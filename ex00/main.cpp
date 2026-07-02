@@ -2,11 +2,6 @@
 
 int main()
 {
-	Bureaucrat a;
-	Bureaucrat b("aledos", 42);
-	Bureaucrat c(b);
-	return(0);
-
 	try
 	{
 		Bureaucrat boss("Boss", 0);
@@ -18,11 +13,22 @@ int main()
 
 	try
 	{
-		Bureaucrat namee("Namee", 47);
+		Bureaucrat apayot("Apayot", 151);
+		std::cout << apayot << std::endl;
 	}
 	catch(const std::exception& e)
 	{
 		std::cerr << e.what() << std::endl;
 	}
-	
+
+	try
+	{
+		Bureaucrat namee("Namee", 47);
+		std::cout << namee << std::endl;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << std::endl;
+	}
+	return (0);
 }
