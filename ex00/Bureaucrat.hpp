@@ -2,13 +2,13 @@
 
 #include <iostream>
 #include <string>
-#include <exeption>
+#include <exception>
 
 class Bureaucrat
 {
 	private:
 		const std::string	_name;
-		int			_grade;
+		int					_grade;
 
 	public:
 		Bureaucrat();
